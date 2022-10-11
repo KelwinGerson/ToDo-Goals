@@ -1,0 +1,16 @@
+.header {
+    background: var(--gray-700);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 200px;
+    left: 0px;
+    right: 0px;
+    top: '0'px;
+}
+
+.header img {
+    height: 3rem;
+    display: block;
+    
+}
