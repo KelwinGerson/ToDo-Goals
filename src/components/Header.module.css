@@ -3,14 +3,12 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    height: 200px;
+    height: 150px;
     left: 0px;
     right: 0px;
-    top: '0'px;
+    top: 0px;
 }
 
 .header img {
     height: 3rem;
-    display: block;
-    
 }
