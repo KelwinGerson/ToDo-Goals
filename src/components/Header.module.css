@@ -1,16 +1,16 @@
 .header {
     background: var(--gray-700);
-    display: flex;
-    justify-content: center;
     position: absolute;
-    height: 150px;
+    height: 200px;
     left: 0px;
     right: 0px;
     top: 0px;
-    justify-content: center;
-    align-items: center;
 }
 
 .header img {
-    height: 3rem;
+    position: absolute;
+    width: 126px;
+    height: 48px;
+    left: 657px;
+    top: 72px;
 }
