@@ -1,21 +1,55 @@
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react'
 import styles from '../components/NewTask.module.css'
 
 export function NewTask () {
+
+    const [tasks, setTasks] = useState([
+        'Finish Web Application'
+    ])
+
+    const [newTask, setNewTask ] = useState('')
+
+    function handleCreateNewTask(event: FormEvent) {
+        event?.preventDefault()
+        setTasks([...tasks, newTask]);
+        setNewTask('');
+    }
+
+    function handleNewTaskChange (event: ChangeEvent<HTMLTextAreaElement>) {
+        event.target.setCustomValidity('')
+        setNewTask(event.target.value)
+    }
+
+    function handleNewTaskInvalid(event: InvalidEvent<HTMLTextAreaElement>) {
+        event.target.setCustomValidity('Este campo é obrigatório!')
+    }
+
     return (
         <article>
-            <form className={styles.boxNewTask} action="">
+            <form onSubmit={handleCreateNewTask} className={styles.boxNewTask} action="">
                     <textarea className={styles.textAreaTask}
                         name="" 
                         placeholder="Adicione uma nova tarefa..."
-                        value=''
-                        // required                    
+                        value={newTask}
+                        onChange={handleNewTaskChange}
+                        onInvalid={handleNewTaskInvalid}
+                        
+                        // required
                     />
                 <footer>
-                    <button className={styles.buttonCreate} type="submit">
+                    <button className={styles.buttonCreate} type='submit' >
+                        <img src="src/assets/Layer 2.png" alt="" />
                         Criar
                     </button>
                 </footer>
             </form>
+
+            <div>
+                {tasks}
+            </div>
+
+
+
         </article>
     )
 }
