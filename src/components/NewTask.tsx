@@ -4,7 +4,7 @@ import styles from '../components/NewTask.module.css'
 export function NewTask () {
 
     const [tasks, setTasks] = useState([
-        'Finish Web Application'
+        ''
     ])
 
     const [newTask, setNewTask ] = useState('')
@@ -28,13 +28,12 @@ export function NewTask () {
         <article>
             <form onSubmit={handleCreateNewTask} className={styles.boxNewTask} action="">
                     <textarea className={styles.textAreaTask}
-                        name="" 
+                        name='task'
                         placeholder="Adicione uma nova tarefa..."
                         value={newTask}
                         onChange={handleNewTaskChange}
                         onInvalid={handleNewTaskInvalid}
-                        
-                        // required
+                        required
                     />
                 <footer>
                     <button className={styles.buttonCreate} type='submit' >
@@ -44,12 +43,13 @@ export function NewTask () {
                 </footer>
             </form>
 
-            <div>
-                {tasks}
+            <div className={styles.taskList}>
+                {tasks.map(task => {
+                    return (
+                        task
+                    )
+                })}
             </div>
-
-
-
         </article>
     )
 }
