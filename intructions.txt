@@ -2,3 +2,9 @@
 [ ] Checkbox
 [ ] Delete Button
 [ ] Create Button
+
+---------------------
+IDEIAS
+
+[] change img
+[] change name of app
