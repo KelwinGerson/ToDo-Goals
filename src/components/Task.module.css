@@ -102,3 +102,7 @@
     align-self: stretch;
     flex-grow: 0
 }
+
+.taskList {
+    margin-top: 2rem;
+}

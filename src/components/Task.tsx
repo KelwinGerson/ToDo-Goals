@@ -8,10 +8,8 @@ export function Task(){
                 <div className={styles.taskDone}>Concluídas 0</div>
             </header>
                 <div className={styles.boxTask}>
-
                         <div>
                             <img className={styles.pendentTaskImg} src="src/assets/Clipboard.png" alt="" />
-                            
                             <div className={styles.pendentTask}>
                             Você ainda não tem tarefas cadastradas
                             </div>
