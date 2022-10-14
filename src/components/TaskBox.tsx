@@ -1,6 +1,6 @@
-import styles from './Task.module.css'
+import styles from './TaskBox.module.css'
 
-export function Task(){
+export function TaskBox(){
     return(
         <article className={styles.fullBox}>
             <header className={styles.infoHeader}>
