@@ -8,3 +8,5 @@ IDEIAS
 
 [] change img
 [] change name of app
+[] banco de dados online com library
+[] login e senha
