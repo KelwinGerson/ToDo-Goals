@@ -18,8 +18,51 @@
 
 }
 
-.button {
+.buttonDelete {
+    /* trash */
     background: transparent;
     border:none!important;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
 }
 
+.buttonCheck {
+    background: transparent;
+    border:none!important;
+    /* check */
+
+
+    width: 24px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.taskContent {
+    width: 632px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #F2F2F2;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}

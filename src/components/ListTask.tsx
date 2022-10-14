@@ -16,10 +16,10 @@ export function LiskTask({content, onDeleteTaks} : ListTaskProps) {
         <div className={styles.task} >
             <div className={styles.commentBox}>
                 <div className={styles.commentContent}>
-                    <button className={styles.button} onClick={handleDeleteComment} title='Deletar comentário'>
+                    <button className={styles.buttonDelete} onClick={handleDeleteComment} title='Deletar comentário'>
                         <Trash size={15} color="#6495ED" />
                     </button>
-                    <button className={styles.button}>
+                    <button className={styles.buttonCheck}>
                         <CheckCircle size={15} color="#6495ED" />
                     </button>
                 </div>
