@@ -6,7 +6,7 @@ import { LiskTask } from './ListTask'
 export function NewTask() {
 
     const [tasks, setTasks] = useState([
-        ''
+        'Finish this project!'
     ])
 
     const [newTask, setNewTask] = useState('')
@@ -24,6 +24,13 @@ export function NewTask() {
 
     function handleNewTaskInvalid(event: InvalidEvent<HTMLTextAreaElement>) {
         event.target.setCustomValidity('Este campo é obrigatório!')
+    }
+
+    function deleteTask (taskToDelete: string) {
+        const commentsWithoutDeleteOne = tasks.filter(comment => {
+            return comment != taskToDelete;
+        })
+        setComments(commentsWithoutDeleteOne)
     }
 
     return (
@@ -73,11 +80,15 @@ export function NewTask() {
                         <LiskTask
                             key={task}
                             content={task} 
-                            onDeleteTaks={function (taks: string): void {throw new Error('Function not implemented.')}}
+                            onDeleteTask={deleteTask}
                         />
                     )
                 })}
             </div>
         </article>
     )
+}
+
+function setComments(commentsWithoutDeleteOne: string[]) {
+    throw new Error('Function not implemented.')
 }
