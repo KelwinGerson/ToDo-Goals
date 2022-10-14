@@ -1,7 +1,13 @@
 - UseState
-[ ] Checkbox
-[ ] Delete Button
-[ ] Create Button
+[x] Checkbox
+[x] Delete Button
+    [ ] Create a react
+[x] Create Button
+    [ ]Create a react
+
+[ ] Contagem de tarefas criadas
+[ ] Contagem Concluídas
+
 
 ---------------------
 IDEIAS
@@ -10,3 +16,9 @@ IDEIAS
 [] change name of app
 [] banco de dados online com library
 [] login e senha
+
+
+------------------------------------------
+COMANDS:
+
+npm install @mui/material @emotion/react @emotion/styled
