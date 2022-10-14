@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react'
 import styles from '../components/NewTask.module.css'
+import { LiskTask } from './ListTask'
 
 export function NewTask () {
 
@@ -46,7 +47,12 @@ export function NewTask () {
             <div className={styles.taskList}>
                 {tasks.map(task => {
                     return (
-                        task
+                        <LiskTask
+                            key={task}
+                            content={task} onDeleteTaks={function (taks: string): void {
+                                throw new Error('Function not implemented.')
+                            } }                        
+                        />
                     )
                 })}
             </div>
