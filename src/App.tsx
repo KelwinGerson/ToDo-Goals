@@ -1,7 +1,7 @@
 import './App.css'
 import { Header } from './components/Header'
 import { NewTask } from './components/NewTask'
-import { Task } from './components/Task'
+import { TaskBox } from './components/TaskBox'
 
 import './global.css';
 
@@ -10,7 +10,7 @@ function App() {
     <div>
       <Header/>
       <NewTask/>
-      <Task/>
+      <TaskBox/>
     </div>
   )
 }
