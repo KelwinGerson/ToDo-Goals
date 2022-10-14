@@ -50,3 +50,77 @@
     order: 0;
     flex-grow: 1;
 }
+
+.fullTasks {
+    /* Tasks */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 736px;
+    height: 451px;
+    left: calc(50% - 736px/2);
+    top: 291px;
+}
+
+.infoHeader {
+    /* Info */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 561px;
+    width: 736px;
+    height: 19px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.taskCreated {
+    /* Created */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 138px;
+    height: 19px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;  
+}
+
+.taskDone {
+    /* Done */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 138px;
+    height: 19px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.taskList {
+    /* List */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 736px;
+    height: 408px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
