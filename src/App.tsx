@@ -1,15 +1,14 @@
 import './global.css';
-import { Header } from './components/Header'
-import { ListTask } from './components/ListTask'
+import { Home } from './Pages/Home';
 
 
-function App() {
+
+export function App() {
+
   return (
     <div>
-      <Header/>
-      <ListTask/>
+      <Home />
     </div>
   )
 }
 
-export default App
