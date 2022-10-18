@@ -1,10 +1,16 @@
 import styles from './Header.module.css'
-import todoLogo from '../assets/todo.png'
+import logo from '../assets/logo.svg';
 
 export function Header() {
     return (
-        <header className={styles.header}>
-            <img src={todoLogo} alt="Logotipo do site" />
-        </header>
+        // article specifies independent, self-contained content
+        <article className={styles.headerContainer}>
+            {/* negrito */}
+            <strong className={styles.header}>
+                <img src={logo} alt="Logotipo Todo" />
+                {/* span element which is used to color a part of a text */}
+                <p>to<span>do</span></p>
+            </strong>
+        </article>
     )
 }
