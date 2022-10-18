@@ -1,14 +1,13 @@
-import './App.css'
-import { Header } from './components/Header'
-import { NewTask } from './components/NewTask'
-
 import './global.css';
+import { Header } from './components/Header'
+import { ListTask } from './components/ListTask'
+
 
 function App() {
   return (
     <div>
       <Header/>
-      <NewTask/>
+      <ListTask/>
     </div>
   )
 }

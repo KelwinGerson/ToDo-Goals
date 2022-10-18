@@ -1,9 +1,10 @@
 - UseState
 [x] Checkbox
+    [] Create a react
 [x] Delete Button
-    [ ] Create a react
+    [x] Create a react
 [x] Create Button
-    [ ]Create a react
+    [x]Create a react
 
 [ ] Contagem de tarefas criadas
 [ ] Contagem Concluídas

@@ -1,7 +1,7 @@
 import { Plus, Scroll } from 'phosphor-react'
 import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react'
 import styles from '../components/NewTask.module.css'
-import { LiskTask } from './ListTask'
+import { ListTask } from './ListTask'
 
 export function NewTask() {
 
@@ -78,9 +78,9 @@ export function NewTask() {
             <div className={styles.taskList}>
                 {tasks.map(task => {
                     return (
-                        <LiskTask
+                        <ListTask
                             key={task}
-                            content={task} 
+                            id={task} 
                             onDeleteTask={deleteTask}
                         />
                     )
